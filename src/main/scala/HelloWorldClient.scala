@@ -9,7 +9,7 @@ import scala.concurrent.Future
 object HelloWorldClient {
   def main(args: Array[String]): Unit = {
 
-    val channel = ManagedChannelBuilder
+    val channel  = ManagedChannelBuilder
       .forAddress("localhost", 50051)
       .usePlaintext
       .asInstanceOf[ManagedChannelBuilder[_]].build()
